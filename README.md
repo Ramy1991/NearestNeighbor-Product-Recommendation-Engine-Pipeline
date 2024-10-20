@@ -5,8 +5,8 @@ This project implements an automated ML pipeline for generating product recommen
 
 ## Architecture
 The pipeline consists of three main components:
-1. **S3 File Handler** (`get_data_from_s3.py`): Manages all S3 operations including downloading input files and uploading results
-2. **Model Invoker** (`invoke_model.py`): Handles the ML model invocations using AWS SageMaker endpoints
+1. **S3 File Handler** (`s3filehandler.py`): Manages all S3 operations including downloading input files and uploading results
+2. **Model Invoker** (`invokemodel.py`): Handles the ML model invocations using AWS SageMaker endpoints
 3. **Main Pipeline** (`main.py`): Orchestrates the entire process and manages batch processing
 
 ## Prerequisites
@@ -20,8 +20,8 @@ The pipeline consists of three main components:
 
 ## Configuration
 The following configurations need to be set:
-- AWS role ARN and account ID in `invoke_model.py`
-- S3 bucket names and folder paths in `get_data_from_s3.py`
+- AWS role ARN and account ID in `invokemodel.py`
+- S3 bucket names and folder paths in `s3filehandler.py`
 - Marketplace mappings and batch size in `main.py`
 
 ## Installation
