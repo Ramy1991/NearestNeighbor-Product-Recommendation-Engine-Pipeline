@@ -27,7 +27,7 @@ The following configurations need to be set:
 ## Installation
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/Ramy1991/NearestNeighbor-Product-Recommendation-Engine-Pipeline.git
 
 # Install required packages
 pip install boto3 pandas numpy
