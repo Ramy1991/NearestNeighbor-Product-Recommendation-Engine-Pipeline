@@ -42,18 +42,18 @@ python main.py
 
 ## Input Data Format
 The input CSV files should contain the following columns:
-- `phy` (Physical ID)
+- `img_id` (Physical ID)
 - `product_type`
 - `marketplace_id`
-- `asin`
+- `item_id`
 
 ## Output
 The pipeline generates a CSV file with the following columns:
-- `asin`
+- `item_id`
 - `marketplace_id`
-- `phy`
+- `img_id`
 - `product_type`
-- `neighbor_asins`
+- `neighbor_item_id`
 - `neighbors_dist`
 
 ## Process Flow
@@ -78,8 +78,5 @@ The pipeline generates a CSV file with the following columns:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-[Add your chosen license here]
-
 ## Author
-[Your Name/Organization]
+Ramy Gharb
